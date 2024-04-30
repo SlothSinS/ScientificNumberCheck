@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 290px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #211f1f;
+}
+
+h2 {
+    color: #FAF8F1;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 15px;
+    width: calc(100% - 50px); /* Mengatur lebar input agar ada ruang bagi tombol check */
+    outline: 7px #000000;
+}
+
+.input-container {
+    display: flexbox;
+    align-items: center;
+}
+
+.check-button {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    border-radius: 5px 5px 5px 5px; /* Mengatur border radius */
+}
+
+.check-button:hover {
+    background-color: #ffffff;
+}
+
+p#result {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.name-box {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#video-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Menempatkan video di bawah konten lain */
+    background-color: #000; /* Warna latar belakang jika video tidak dimuat */
+}
